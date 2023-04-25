@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select User Type</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: #333;
+			font-size: 36px;
+			margin: 20px 0;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		ul {
+			background-color: #fff;
+			border: 2px solid #333;
+			border-radius: 5px;
+			box-shadow: 0 0 10px #333;
+			display: flex;
+			flex-direction: column;
+			list-style: none;
+			margin: 0 auto;
+			max-inline-size: 400px;
+			padding: 20px;
+			text-align: center;
+		}
+		li {
+			margin-block-end: 10px;
+		}
+		li a {
+			background-color: #333;
+			border-radius: 5px;
+			color: #fff;
+			display: block;
+			font-size: 24px;
+			padding: 10px;
+			text-decoration: none;
+			transition: background-color 0.2s ease;
+		}
+		li a:hover {
+			background-color: #555;
+		}
+		.admin a{
+			background-color: #333;
+			border-radius: 5px;
+			color: #fff;
+			display: block;
+			font-size: 24px;
+			padding: 10px;
+			text-decoration: none;
+			transition: background-color 0.2s ease;
+			inline-size: 380px;
+			text-align: center;
+			margin-inline-start: 36.5%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Kindly select your user type</h1>
+	<ul>
+		<li><a href="/teacher">Teacher</a></li>
+		<li><a href="/parent">Parent</a></li>
+		<li><a href="/student">Student</a></li>
+	</ul>
+	<br>
+	<div class="admin">
+		<a href="/admin">Click here for admin page</a>
+	</div>
+</body>
+</html>
+

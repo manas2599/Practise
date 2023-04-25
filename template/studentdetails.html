@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{%block title%}Adding a Student{%endblock title%}
+
+{%block body%}
+<div class="studentdetails" style="margin: auto; inline-size: 50%; border: 1px solid black; padding: 20px;">
+    <h1 class="text-center">Add a Student's Detail</h1>
+    <form method="POST" action="/studentdetails/">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+            <label for="father" class="form-label">Father name</label>
+            <input type="text" class="form-control" name="father_name" id="F.name"
+                placeholder="Enter your Father's name">
+        </div>
+        <div class="mb-3">
+            <label for="mother" class="form-label">Mother Name</label>
+            <input type="text" class="form-control" name="mother_name" id="M.name"
+                placeholder="Enter your Mother's name">
+        </div>
+        <div class="mb-3">
+            <label for="seat" class="form-label">Seat Number</label>
+            <input type="text" class="form-control" name="seat_number" id="S.No" placeholder="Enter your Seat Number">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" name="phone" id="phone" placeholder="Enter your Phone Number">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="semester" class="form-label">Semester: </label>
+            <select id="semester" name="semester">
+                <option value="selection">Select a semester</option>
+                <option value="Semester 1">Semester 1</option>
+                <option value="Semester 2">Semester 2</option>
+                <option value="Semester 3">Semester 3</option>
+                <option value="Semester 4">Semester 4</option>
+                <option value="Semester 5">Semester 5</option>
+                <option value="Semester 6">Semester 6</option>
+                <option value="Semester 7">Semester 7</option>
+                <option value="Semester 8">Semester 8</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">submit</button>
+    </form>
+</div>
+
+{%endblock body%}

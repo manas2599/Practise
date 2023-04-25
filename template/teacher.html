@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{%block title%}Teacher{%endblock title%}
+
+{%block body%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teacher Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+      .container {
+        max-inline-size: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border: 4px dashed black;
+      }
+      h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-block-start: 0;
+        color: #007bff;
+        text-shadow: 1px 1px 0 #fff;
+      }
+      h2 {
+        font-size: 24px;
+        margin-block-start: 30px;
+        color: #007bff;
+        text-shadow: 1px 1px 0 #fff;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-block-start: 10px;
+        text-align: center;
+      }
+      #LMS {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 4px solid #000000;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        background-color: #0069d9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Teacher Dashboard</h1>
+      <p>Please select an option below:</p>
+      <div class="attribute"></div>
+      <ul>
+        <li><a id="LMS" href="/studentdetails">Add a Student</a></li>
+        <li><a id="LMS" href="/Courses">Add a Course</a></li>
+        <li><a id="LMS" href="/Assignment">Add an Assignment</a></li>
+        <li><a id="LMS" href="/Marks">Add Marks</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+{%endblock body%}
+
